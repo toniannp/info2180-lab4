@@ -23,6 +23,24 @@ h1 {
     margin-top: 0;
 }
 
+#searchForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.search-area {
+    display: flex;
+    gap: 10px;
+}
+
+.search-area input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+}
+
 button {
     background-color: #c53030;
     color: white;
@@ -34,4 +52,33 @@ button {
 
 button:hover {
     background-color: #9b2c2c;
+}
+
+.results {
+    margin-top: 30px;
+    border-top: 1px solid #cbd5e0;
+    padding-top: 15px;
+}
+
+.results h2 {
+    font-size: 18px;
+}
+
+#result h3 {
+    text-transform: uppercase;
+}
+
+#result h4 {
+    margin-top: 5px;
+}
+
+.error {
+    color: #c53030;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .search-area {
+        flex-direction: column;
+    }
 }

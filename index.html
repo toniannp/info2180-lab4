@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,25 @@
     <main class="container">
         <h1>Avengers Character Search</h1>
 
-        <button id="searchButton" type="button">Search</button>
+        <form id="searchForm">
+            <label for="query">Search by Full Name or Alias</label>
+
+            <div class="search-area">
+                <input
+                    type="text"
+                    id="query"
+                    name="query"
+                    placeholder="e.g. Captain America or Steve Rogers"
+                >
+
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <section class="results">
+            <h2>RESULT</h2>
+            <div id="result" aria-live="polite"></div>
+        </section>
     </main>
 </body>
 </html>
